@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1112" />
+  <meta name="description" content="BAT'S BURGER – Konzept-Demo für eine moderne Restaurant- und Bestellwebseite." />
+  <title>BAT'S BURGER · Konzept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="demo-strip">KONZEPT-DEMO · Noch keine echte Bestellung</div>
+
+  <header class="site-header" id="top">
+    <a href="#top" class="brand" aria-label="BAT'S BURGER Startseite">
+      <span class="brand-bat">BAT'S</span>
+      <span class="brand-burger">BURGER</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <a href="#menu">Speisekarte</a>
+      <a href="#about">Über uns</a>
+      <a href="#location">Kontakt</a>
+    </nav>
+    <button class="btn btn-primary header-order" data-open-order>Jetzt bestellen</button>
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <div class="eyebrow"><span class="pulse-dot"></span> WAIBLINGEN · HALAL</div>
+        <h1>BURGER, DIE<br><span>HÄNGEN BLEIBEN.</span></h1>
+        <p>Saftiges Beef. Hausgemachte Saucen. Große Auswahl.<br>Dein Burger-Spot mitten in Waiblingen.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-large" data-open-order>Jetzt bestellen <span>→</span></button>
+          <a class="btn btn-ghost btn-large" href="#menu">Speisekarte ansehen</a>
+        </div>
+        <div class="service-chips">
+          <span>🚗 Lieferung</span><span>🛍️ Abholung</span><span>🍽️ Vor Ort</span>
+        </div>
+      </div>
+      <div class="hero-badge"><strong>100%</strong><span>HALAL<br>FLEISCH*</span></div>
+      <a class="scroll-hint" href="#bestseller">ENTDECKEN <span>↓</span></a>
+    </section>
+
+    <section class="trustbar" aria-label="Vorteile">
+      <div><strong>FRISCH</strong><span>zubereitet</span></div>
+      <div><strong>HALAL</strong><span>Fleisch</span></div>
+      <div><strong>HAUSGEMACHT</strong><span>Saucen</span></div>
+      <div><strong>WAIBLINGEN</strong><span>Untere Lindenstraße 1</span></div>
+    </section>
+
+    <section class="section" id="bestseller">
+      <div class="section-head reveal">
+        <div><span class="section-kicker">UNSERE FAVORITEN</span><h2>BESTSELLER</h2></div>
+        <a href="#menu" class="text-link">Ganze Speisekarte →</a>
+      </div>
+
+      <div class="product-grid" id="bestsellerGrid"></div>
+    </section>
+
+    <section class="why section-dark" id="about">
+      <div class="why-photo reveal">
+        <div class="photo-label">BAT'S<br>BURGER</div>
+      </div>
+      <div class="why-content reveal">
+        <span class="section-kicker">WARUM BAT'S?</span>
+        <h2>NICHT EINFACH<br>IRGENDEIN BURGER.</h2>
+        <p>Bei Bat's geht es um kräftigen Geschmack, eigene Kombinationen und Burger, auf die man sich schon beim Bestellen freut.</p>
+        <div class="features">
+          <article><span>01</span><div><h3>Halal Fleisch</h3><p>Das bestehende Angebot kommuniziert halal/helal Fleisch – prominent und sofort sichtbar.</p></div></article>
+          <article><span>02</span><div><h3>Hausgemachte Saucen</h3><p>Haussauce, Samurai, Joppie, Curry-Mango und mehr machen Bat's unverwechselbar.</p></div></article>
+          <article><span>03</span><div><h3>Von Classic bis XXL</h3><p>Vom Classic Beef Burger bis zum Big Bat's – für kleinen und sehr großen Hunger.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section menu-inner">
+        <div class="section-head reveal">
+          <div><span class="section-kicker">APPETIT BEKOMMEN?</span><h2>SPEISEKARTE</h2></div>
+          <p class="menu-intro">Produkte ansehen, Details öffnen und testweise in den Warenkorb legen.</p>
+        </div>
+
+        <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="Speisekarten-Kategorien"></div>
+        <div class="menu-grid" id="menuGrid"></div>
+      </div>
+    </section>
+
+    <section class="order-teaser section-dark">
+      <div class="teaser-copy reveal">
+        <span class="section-kicker">EINFACH BESTELLEN</span>
+        <h2>KEIN LOGIN.<br>KEIN UMWEG.</h2>
+        <p>Erst Speisekarte ansehen, dann Lieferung oder Abholung wählen. Als Gast bestellen und direkt zum Essen.</p>
+        <button class="btn btn-primary btn-large" data-open-order>Bestellung ausprobieren →</button>
+      </div>
+      <div class="phone-mock reveal" aria-label="Bestellansicht auf einem Smartphone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="mini-logo">BAT'S <span>BURGER</span></div>
+          <div class="mini-title">Wie möchtest du bestellen?</div>
+          <div class="mini-card selected">🚗 <div><strong>Lieferung</strong><small>ca. 35–50 Min.</small></div><b>✓</b></div>
+          <div class="mini-card">🛍️ <div><strong>Abholung</strong><small>ca. 15–25 Min.</small></div></div>
+          <label class="mini-label">DEINE PLZ</label>
+          <div class="mini-input">71332 <span>✓</span></div>
+          <div class="mini-info"><strong>Lieferung möglich</strong><small>Mindestbestellwert 20,00 € · 0 € Liefergebühr</small></div>
+          <div class="mini-button">Speisekarte öffnen</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section">
+      <div class="section-head reveal">
+        <div><span class="section-kicker">STIMMEN AUS WAIBLINGEN</span><h2>GÄSTE LIEBEN BAT'S.</h2></div>
+        <div class="rating"><strong>★ 4,2</strong><span>Google-Bewertung*</span></div>
+      </div>
+      <div class="review-grid reveal">
+        <blockquote><div class="stars">★★★★★</div><p>„Hier könnte später eine echte, ausgewählte Google-Rezension stehen.“</p><footer>— Google Gast</footer></blockquote>
+        <blockquote><div class="stars">★★★★★</div><p>„Große Burger, starke Saucen und unkompliziert bestellen – genau darum soll es gehen.“</p><footer>— Konzeptbeispiel</footer></blockquote>
+        <blockquote><div class="stars">★★★★★</div><p>„Auf dem Handy sofort Speisekarte, Preise und Bestellung finden – ohne Suchen.“</p><footer>— Konzeptbeispiel</footer></blockquote>
+      </div>
+    </section>
+
+    <section class="location section-dark" id="location">
+      <div class="location-card reveal">
+        <span class="section-kicker">KOMM VORBEI</span>
+        <h2>BAT'S BURGER<br>WAIBLINGEN</h2>
+        <div class="location-meta">
+          <div><span>ADRESSE</span><strong>Untere Lindenstraße 1<br>71332 Waiblingen</strong></div>
+          <div><span>TELEFON</span><strong>07151 945 71 27</strong></div>
+          <div><span>ÖFFNUNGSZEITEN*</span><strong>Mo–Fr 11:00–22:00<br>Sa–So 12:00–22:00</strong></div>
+        </div>
+        <div class="location-actions"><a class="btn btn-primary" href="https://maps.google.com/?q=Untere+Lindenstraße+1+71332+Waiblingen" target="_blank" rel="noreferrer">Route öffnen</a><a class="btn btn-ghost" href="tel:+4971519457127">Anrufen</a></div>
+      </div>
+      <div class="map-faux reveal"><div class="map-road road-a"></div><div class="map-road road-b"></div><div class="map-road road-c"></div><div class="map-pin"><span>★</span></div><div class="map-caption">MITTEN IN<br><strong>WAIBLINGEN</strong></div></div>
+    </section>
+
+    <section class="faq section">
+      <div class="section-head reveal"><div><span class="section-kicker">NOCH FRAGEN?</span><h2>FAQ</h2></div></div>
+      <div class="faq-list reveal">
+        <details><summary>Ist das Fleisch halal?<span>+</span></summary><p>Für die Konzeptseite übernehmen wir die bestehende Kommunikation von Bat's Burger. Die endgültige Formulierung wird vor einer echten Veröffentlichung noch einmal bestätigt.</p></details>
+        <details><summary>Kann ich liefern lassen oder abholen?<span>+</span></summary><p>Ja. Im späteren Bestellsystem sollen Lieferung und Abholung möglich sein. In dieser Demo wird der Ablauf nur simuliert.</p></details>
+        <details><summary>Muss ich ein Konto erstellen?<span>+</span></summary><p>Nein. Das Konzept sieht ausdrücklich eine Gastbestellung ohne Login-Pflicht vor.</p></details>
+        <details><summary>Kann ich Burger anpassen?<span>+</span></summary><p>Ja. Extras und Zutaten zum Abwählen lassen sich in der Demo bereits beispielhaft ausprobieren.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand"><span class="brand-bat">BAT'S</span><span class="brand-burger">BURGER</span><small>WAIBLINGEN</small></div>
+    <div class="footer-links"><a href="#menu">Speisekarte</a><a href="#about">Über uns</a><a href="#location">Kontakt</a><a href="#">Instagram</a></div>
+    <div class="footer-legal"><span>Konzept-Demo 2026</span><span>Impressum · Datenschutz</span></div>
+  </footer>
+
+  <button class="floating-cart" id="floatingCart" aria-label="Warenkorb öffnen">
+    <span>🛒</span><strong id="floatingCartText">Warenkorb</strong><b id="cartCount">0</b>
+  </button>
+
+  <div class="modal-backdrop" id="productModal" aria-hidden="true">
+    <div class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalProductName">
+      <button class="modal-close" data-close-product aria-label="Schließen">×</button>
+      <div class="modal-product-image" id="modalProductImage"></div>
+      <div class="modal-product-body">
+        <span class="section-kicker" id="modalProductCategory"></span>
+        <h2 id="modalProductName"></h2>
+        <p id="modalProductDescription"></p>
+        <div class="modal-price" id="modalProductPrice"></div>
+        <div class="option-group">
+          <h3>Extras</h3>
+          <label><input type="checkbox" value="1.00" data-extra="Jalapeños"> <span>Jalapeños</span><b>+1,00 €</b></label>
+          <label><input type="checkbox" value="1.50" data-extra="Cheddar"> <span>Extra Cheddar</span><b>+1,50 €</b></label>
+          <label><input type="checkbox" value="1.80" data-extra="Rinderbacon"> <span>Rinderbacon</span><b>+1,80 €</b></label>
+        </div>
+        <div class="option-group remove-group">
+          <h3>Ohne</h3>
+          <div class="remove-chips"><label><input type="checkbox"> <span>Salat</span></label><label><input type="checkbox"> <span>Tomate</span></label><label><input type="checkbox"> <span>Gurke</span></label><label><input type="checkbox"> <span>Zwiebeln</span></label></div>
+        </div>
+        <div class="modal-add-row"><div class="qty"><button id="qtyMinus">−</button><strong id="qtyValue">1</strong><button id="qtyPlus">+</button></div><button class="btn btn-primary modal-add" id="addToCartBtn">In den Warenkorb · <span>0,00 €</span></button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawer-backdrop" id="cartBackdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Warenkorb">
+    <div class="drawer-head"><div><span class="section-kicker">DEINE BESTELLUNG</span><h2>WARENKORB</h2></div><button class="modal-close" id="closeCart" aria-label="Schließen">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>🛒</span><h3>Noch nichts drin.</h3><p>Füge testweise einen Burger hinzu.</p></div>
+    <div class="cart-summary" id="cartSummary">
+      <div><span>Zwischensumme</span><strong id="cartSubtotal">0,00 €</strong></div>
+      <div><span>Liefergebühr</span><strong>0,00 €</strong></div>
+      <div class="minimum" id="minimumMessage">Noch 20,00 € bis zum Mindestbestellwert.</div>
+      <div class="cart-total"><span>Gesamt</span><strong id="cartTotal">0,00 €</strong></div>
+      <button class="btn btn-primary btn-large checkout-btn" id="cartCheckout">Weiter zur Bestellung →</button>
+    </div>
+  </aside>
+
+  <div class="modal-backdrop" id="orderModal" aria-hidden="true">
+    <div class="order-modal" role="dialog" aria-modal="true" aria-label="Demo-Bestellablauf">
+      <button class="modal-close" data-close-order aria-label="Schließen">×</button>
+      <div class="order-progress"><span class="active"></span><span></span><span></span></div>
+      <span class="section-kicker">DEMO BESTELLABLAUF</span>
+      <h2>WIE MÖCHTEST DU BESTELLEN?</h2>
+      <p>In der echten Version würde hier direkt geprüft, ob deine Adresse im Liefergebiet liegt.</p>
+      <div class="order-options">
+        <button class="order-option selected" data-method="Lieferung"><span>🚗</span><div><strong>Lieferung</strong><small>ca. 35–50 Minuten</small></div><b>✓</b></button>
+        <button class="order-option" data-method="Abholung"><span>🛍️</span><div><strong>Abholung</strong><small>ca. 15–25 Minuten</small></div><b>✓</b></button>
+      </div>
+      <label class="postal-label">PLZ <input id="postalInput" inputmode="numeric" maxlength="5" value="71332" /></label>
+      <div class="delivery-result" id="deliveryResult"><span>✓</span><div><strong>Lieferung nach 71332 möglich</strong><small>Mindestbestellwert 20,00 € · Liefergebühr 0,00 €</small></div></div>
+      <button class="btn btn-primary btn-large full" id="continueOrder">Speisekarte öffnen →</button>
+      <small class="demo-note">Nur Konzept: Es wird nichts versendet und keine Zahlung ausgelöst.</small>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Zum Warenkorb hinzugefügt</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
